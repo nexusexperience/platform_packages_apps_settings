@@ -885,6 +885,7 @@ public class WifiSettings extends RestrictedSettingsFragment
             updateAccessPoints();
             updateConnectionState(info.getDetailedState());
         } else if (WifiManager.RSSI_CHANGED_ACTION.equals(action)) {
+            updateAccessPoints();
             updateConnectionState(null);
         }
     }
