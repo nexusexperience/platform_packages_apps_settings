@@ -291,6 +291,9 @@ public class PowerUsageSummary extends PreferenceFragment {
                     if ("user".equals(Build.TYPE)) {
                         continue;
                     }
+                    if ("userdebug".equals(Build.TYPE)) {
+                        continue;
+                    }
                 }
                 if (sipper.drainType == BatterySipper.DrainType.UNACCOUNTED) {
                     // Don't show over-counted unless it is at least 1/2 the size of
@@ -302,6 +305,9 @@ public class PowerUsageSummary extends PreferenceFragment {
                         continue;
                     }
                     if ("user".equals(Build.TYPE)) {
+                        continue;
+                    }
+                    if ("userdebug".equals(Build.TYPE)) {
                         continue;
                     }
                 }
