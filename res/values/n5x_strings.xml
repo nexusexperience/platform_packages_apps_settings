@@ -76,4 +76,9 @@
     <!-- About phone screen, NX version -->
     <string name="mod_version">Nexus Experience version</string>
     <string name="mod_version_default">Unknown</string>
+
+    <!-- Increasing ring tone volume -->
+    <string name="increasing_ring_volume_option_title">Increasing ring volume</string>
+    <string name="increasing_ring_min_volume_title">Start volume</string>
+    <string name="increasing_ring_volume_notice">Notice: As the start volume is set higher than the ringer volume, the ring tone will be played using the ringer volume.</string>
 </resources>
