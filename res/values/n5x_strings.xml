@@ -15,7 +15,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
      <!-- Navigation bar settings -->
-    <string name="navigation_bar">Navigation Bar</string>
+    <string name="navigation_bar">Navigation bar</string>
     <string name="navigation_bar_height">Navigation bar height:</string>
 
     <!-- Statusbar Category label -->
