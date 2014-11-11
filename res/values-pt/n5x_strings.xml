@@ -17,4 +17,23 @@
      <!-- Navigation bar settings -->
     <string name="navigation_bar">Barra de navegação</string>
     <string name="navigation_bar_height">Altura da barra de navegação:</string>
+
+    <!-- Statusbar Category label -->
+    <string name="additional_settings_qs_statusbar_title">Barra de status</string>
+
+    <!-- Network traffic -->
+    <string name="network_traffic_title">Tráfego de rede</string>
+    <string name="show_network_traffic_state">Monitor de tráfego na barra de status</string>
+    <string name="show_network_traffic_unit">Unidade de exibição</string>
+    <string name="show_network_traffic_frequency">Intervalo de atualização</string>
+    <string name="show_network_traffic_disable">Desabilitado</string>
+    <string name="show_network_traffic_up">Upload</string>
+    <string name="show_network_traffic_down">Download</string>
+    <string name="show_network_traffic_all">Upload e download</string>
+    <string name="show_network_traffic_bit">Bits por segundo</string>
+    <string name="show_network_traffic_byte">Bytes por segundo</string>
+    <string name="show_network_traffic_500">500 ms</string>
+    <string name="show_network_traffic_1000">1000 ms</string>
+    <string name="show_network_traffic_1500">1500 ms</string>
+    <string name="show_network_traffic_2000">2000 ms</string>
 </resources>
