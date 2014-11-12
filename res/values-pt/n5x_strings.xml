@@ -21,6 +21,38 @@
     <!-- Statusbar Category label -->
     <string name="additional_settings_qs_statusbar_title">Barra de status</string>
 
+    <!-- Status bar | Clock -->
+    <string name="status_bar_clock">Relógio e data</string>
+    <string name="status_bar_clock_title">Estilo do relógio e data</string>
+    <string name="clock_title_enable">Alinhamento</string>
+    <string name="clock_enabled">Habilitado</string>
+    <string name="clock_disabled">Desabilitado</string>
+    <string name="status_bar_show_clock_title">Mostrar relógio e data</string>
+    <string name="status_bar_am_pm_title">AM/PM</string>
+    <string name="status_bar_am_pm_info">Relógio 24h está habilitado</string>
+    <string name="enable_clock_weekday">Dia da semana</string>
+    <string name="enable_clock_weekday_summary">Dia da semana abreviado antes da hora</string>
+    <string name="right_clock">Relógio à direita</string>
+    <string name="center_clock">Relógio ao centro</string>
+    <string name="dont_show">Não mostrar</string>
+    <string name="clock_date_display">Data</string>
+    <string name="clock_date_display_summary">Mostrar data customizada antes do relógio</string>
+    <string name="clock_date_style">Estilo da data</string>
+    <string name="clock_date_format">Formato da data</string>
+    <string name="clock_date_string_edittext_title">Precisa estar no formato MM/dd/yy</string>
+    <string name="clock_date_string_edittext_summary">Entrar com a descrição</string>
+    <string name="am_pm_clock_normal">Tamanho normal</string>
+    <string name="am_pm_clock_small">Tamanho pequeno</string>
+    <string name="am_pm_clock_none">Não mostrar</string>
+    <string name="clock_date_display_none">Não mostrar</string>
+    <string name="clock_date_display_small">Tamanho pequeno</string>
+    <string name="clock_date_display_normal">Tamanho normal</string>
+    <string name="clock_date_style_normal">Normal</string>
+    <string name="clock_date_style_lowercase">Minúscula</string>
+    <string name="clock_date_style_uppercase">Maiúscula</string>
+    <string name="clock_date_format_custom">Formato java customizado</string>
+    <string name="status_bar_clock_style_reset_message">Restaurar cor do relógio?</string>
+
     <!-- Network traffic -->
     <string name="network_traffic_title">Tráfego de rede</string>
     <string name="show_network_traffic_state">Monitor de tráfego na barra de status</string>
