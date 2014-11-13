@@ -68,4 +68,8 @@
     <string name="show_network_traffic_1000">1000 ms</string>
     <string name="show_network_traffic_1500">1500 ms</string>
     <string name="show_network_traffic_2000">2000 ms</string>
+
+    <!-- Battery percentage -->
+    <string name="status_bar_native_battery_percentage_title">Battery percentage</string>
+    <string name="status_bar_native_battery_percentage_summary">Show hidden percentage</string>
 </resources>
