@@ -72,4 +72,8 @@
     <!-- Battery percentage -->
     <string name="status_bar_native_battery_percentage_title">Porcentagem da bateria</string>
     <string name="status_bar_native_battery_percentage_summary">Mostrar porcentagem oculta</string>
+
+    <!-- About phone screen, NX version -->
+    <string name="mod_version">Versão da Nexus Experience</string>
+    <string name="mod_version_default">Desconhecida</string>
 </resources>

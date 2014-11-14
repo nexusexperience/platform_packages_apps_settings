@@ -72,4 +72,8 @@
     <!-- Battery percentage -->
     <string name="status_bar_native_battery_percentage_title">Battery percentage</string>
     <string name="status_bar_native_battery_percentage_summary">Show hidden percentage</string>
+
+    <!-- About phone screen, NX version -->
+    <string name="mod_version">Nexus Experience version</string>
+    <string name="mod_version_default">Unknown</string>
 </resources>
