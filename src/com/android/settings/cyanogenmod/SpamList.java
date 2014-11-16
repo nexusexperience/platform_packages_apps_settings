@@ -91,7 +91,7 @@ public class SpamList extends ListFragment {
         msg.append(getActivity().getString(R.string.app_ops_ignored_count, info.count));
         builder.setMessage(msg.toString());
         builder.setPositiveButton(android.R.string.ok, null);
-        builder.setNeutralButton(R.string.blacklist_button_delete, new DialogInterface.OnClickListener() {
+        builder.setNeutralButton(R.string.delete, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 mAdapter.removeItem(position);
