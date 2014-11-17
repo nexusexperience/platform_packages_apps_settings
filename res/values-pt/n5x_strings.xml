@@ -14,66 +14,107 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-     <!-- Navigation bar settings -->
-    <string name="navigation_bar">Barra de navegação</string>
-    <string name="navigation_bar_height">Altura da barra de navegação:</string>
+  <string name="navigation_bar">Barra de navegação</string>
+  <string name="navigation_bar_height">Altura da barra de navegação:</string>
+  <string name="additional_settings_qs_statusbar_title">Barra de status</string>
+  <string name="status_bar_clock">Relógio e data</string>
+  <string name="status_bar_clock_title">Estilo do relógio e data</string>
+  <string name="clock_title_enable">Alinhamento</string>
+  <string name="clock_enabled">Habilitado</string>
+  <string name="clock_disabled">Desabilitado</string>
+  <string name="status_bar_show_clock_title">Mostrar relógio e data</string>
+  <string name="status_bar_am_pm_title">AM/PM</string>
+  <string name="status_bar_am_pm_info">Relógio 24h está habilitado</string>
+  <string name="enable_clock_weekday">Dia da semana</string>
+  <string name="enable_clock_weekday_summary">Dia da semana abreviado antes da hora</string>
+  <string name="right_clock">Relógio à direita</string>
+  <string name="center_clock">Relógio ao centro</string>
+  <string name="dont_show">Não mostrar</string>
+  <string name="clock_date_display">Data</string>
+  <string name="clock_date_display_summary">Mostrar data customizada antes do relógio</string>
+  <string name="clock_date_style">Estilo da data</string>
+  <string name="clock_date_format">Formato da data</string>
+  <string name="clock_date_string_edittext_title">Precisa estar no formato MM/dd/yy</string>
+  <string name="clock_date_string_edittext_summary">Entrar com a descrição</string>
+  <string name="am_pm_clock_normal">Tamanho normal</string>
+  <string name="am_pm_clock_small">Tamanho pequeno</string>
+  <string name="am_pm_clock_none">Não mostrar</string>
+  <string name="clock_date_display_none">Não mostrar</string>
+  <string name="clock_date_display_small">Tamanho pequeno</string>
+  <string name="clock_date_display_normal">Tamanho normal</string>
+  <string name="clock_date_style_normal">Normal</string>
+  <string name="clock_date_style_lowercase">Minúscula</string>
+  <string name="clock_date_style_uppercase">Maiúscula</string>
+  <string name="clock_date_format_custom">Formato java customizado</string>
+  <string name="status_bar_clock_style_reset_message">Restaurar cor do relógio?</string>
+  <string name="network_traffic_title">Tráfego de rede</string>
+  <string name="show_network_traffic_state">Monitor de tráfego na barra de status</string>
+  <string name="show_network_traffic_unit">Unidade de exibição</string>
+  <string name="show_network_traffic_frequency">Intervalo de atualização</string>
+  <string name="show_network_traffic_disable">Desabilitado</string>
+  <string name="show_network_traffic_up">Upload</string>
+  <string name="show_network_traffic_down">Download</string>
+  <string name="show_network_traffic_all">Upload e download</string>
+  <string name="show_network_traffic_bit">Bits por segundo</string>
+  <string name="show_network_traffic_byte">Bytes por segundo</string>
+  <string name="show_network_traffic_500">500 ms</string>
+  <string name="show_network_traffic_1000">1000 ms</string>
+  <string name="show_network_traffic_1500">1500 ms</string>
+  <string name="show_network_traffic_2000">2000 ms</string>
+  <string name="status_bar_native_battery_percentage_title">Porcentagem da bateria</string>
+  <string name="status_bar_native_battery_percentage_summary">Mostrar porcentagem oculta</string>
+  <string name="mod_version">Versão da Nexus Experience</string>
+  <string name="mod_version_default">Desconhecida</string>
 
-    <!-- Statusbar Category label -->
-    <string name="additional_settings_qs_statusbar_title">Barra de status</string>
-
-    <!-- Status bar | Clock -->
-    <string name="status_bar_clock">Relógio e data</string>
-    <string name="status_bar_clock_title">Estilo do relógio e data</string>
-    <string name="clock_title_enable">Alinhamento</string>
-    <string name="clock_enabled">Habilitado</string>
-    <string name="clock_disabled">Desabilitado</string>
-    <string name="status_bar_show_clock_title">Mostrar relógio e data</string>
-    <string name="status_bar_am_pm_title">AM/PM</string>
-    <string name="status_bar_am_pm_info">Relógio 24h está habilitado</string>
-    <string name="enable_clock_weekday">Dia da semana</string>
-    <string name="enable_clock_weekday_summary">Dia da semana abreviado antes da hora</string>
-    <string name="right_clock">Relógio à direita</string>
-    <string name="center_clock">Relógio ao centro</string>
-    <string name="dont_show">Não mostrar</string>
-    <string name="clock_date_display">Data</string>
-    <string name="clock_date_display_summary">Mostrar data customizada antes do relógio</string>
-    <string name="clock_date_style">Estilo da data</string>
-    <string name="clock_date_format">Formato da data</string>
-    <string name="clock_date_string_edittext_title">Precisa estar no formato MM/dd/yy</string>
-    <string name="clock_date_string_edittext_summary">Entrar com a descrição</string>
-    <string name="am_pm_clock_normal">Tamanho normal</string>
-    <string name="am_pm_clock_small">Tamanho pequeno</string>
-    <string name="am_pm_clock_none">Não mostrar</string>
-    <string name="clock_date_display_none">Não mostrar</string>
-    <string name="clock_date_display_small">Tamanho pequeno</string>
-    <string name="clock_date_display_normal">Tamanho normal</string>
-    <string name="clock_date_style_normal">Normal</string>
-    <string name="clock_date_style_lowercase">Minúscula</string>
-    <string name="clock_date_style_uppercase">Maiúscula</string>
-    <string name="clock_date_format_custom">Formato java customizado</string>
-    <string name="status_bar_clock_style_reset_message">Restaurar cor do relógio?</string>
-
-    <!-- Network traffic -->
-    <string name="network_traffic_title">Tráfego de rede</string>
-    <string name="show_network_traffic_state">Monitor de tráfego na barra de status</string>
-    <string name="show_network_traffic_unit">Unidade de exibição</string>
-    <string name="show_network_traffic_frequency">Intervalo de atualização</string>
-    <string name="show_network_traffic_disable">Desabilitado</string>
-    <string name="show_network_traffic_up">Upload</string>
-    <string name="show_network_traffic_down">Download</string>
-    <string name="show_network_traffic_all">Upload e download</string>
-    <string name="show_network_traffic_bit">Bits por segundo</string>
-    <string name="show_network_traffic_byte">Bytes por segundo</string>
-    <string name="show_network_traffic_500">500 ms</string>
-    <string name="show_network_traffic_1000">1000 ms</string>
-    <string name="show_network_traffic_1500">1500 ms</string>
-    <string name="show_network_traffic_2000">2000 ms</string>
-
-    <!-- Battery percentage -->
-    <string name="status_bar_native_battery_percentage_title">Porcentagem da bateria</string>
-    <string name="status_bar_native_battery_percentage_summary">Mostrar porcentagem oculta</string>
-
-    <!-- About phone screen, NX version -->
-    <string name="mod_version">Versão da Nexus Experience</string>
-    <string name="mod_version_default">Desconhecida</string>
+  <string name="spam_added_title">Adicionada %1$s</string>
+  <string name="spam_last_blocked_title">Última bloqueada %1$s</string>
+  <string name="block_notifications_title">Filtrar notificações</string>
+  <string name="no_filters_title">Nenhum conjunto de filtros definido</string>
+  <string name="app_ops_ignored_count">Negados <xliff:g id="count" example="2 times">%s</xliff:g></string>
+  <string name="title_keyboard_input">Opções avançadas</string>
+  <string name="disable_fullscreen_keyboard_title">Desabilitar teclado em tela inteira</string>
+  <string name="disable_fullscreen_keyboard_summary">Teclado em modo paisagem nunca irá tomar toda a tela</string>
+  <string name="volume_key_cursor_control_title">Controle de cursor do teclado</string>
+  <string name="volume_key_cursor_control_on">Volume para cima/baixo move o cursor para esquerda/direita</string>
+  <string name="volume_key_cursor_control_on_reverse">Volume para cima/baixo move cursor para direita/esquerda</string>
+  <string name="keyboard_rotation_toggle_title">Auto rotação do teclado</string>
+  <string name="keyboard_rotation_toggle_summary">Forçar autorrotação quando o teclado for mostrado</string>
+  <string name="keyboard_rotation_timeout_title">Tempo de autorrotação</string>
+  <string name="keyboard_rotation_timeout_summary">Desabilitar o sensor de autorrotação <xliff:g id="rotate_timeout">%1$s</xliff:g> segundos após o teclado ser escondido</string>
+  <string name="keyboard_rotation_dialog">Observe: Essa função força temporariamente o ligamento da autorrotação enquanto o teclado está ativo. Isso não terá efeito se a autorrotação já estiver habilitada.</string>
+  <string name="show_enter_key_title">Mostrar a tecla enter</string>
+  <string name="show_enter_key_summary">Forçar o teclado a mostrar a tecla entrer ao invés da tecla de emoticons</string>
+  <string name="ime_switcher_notify">Botão do método de entrada</string>
+  <string name="ime_switcher_notify_summary">Exibir botão do seletor de método de entrada na barra de navegação</string>
+  <string name="ok">OK</string>
+  <string name="reset">Restaurar</string>
+  <string name="attention">Atenção</string>
+  <string name="enabled">Habilitado</string>
+  <string name="default_string">Padrão</string>
+  <string name="delete">Excluir</string>
+  <string name="advanced_sound_title">Opções avançadas</string>
+  <string name="sound_title">Som</string>
+  <string name="safe_headset_volume_title">Volume seguro do fone de ouvido</string>
+  <string name="safe_headset_volume_summary">Reduzir o volume do fone de ouvido ao conectar</string>
+  <string name="safe_headset_volume_warning_dialog_text">Ouvir em volume alto por longos períodos pode prejudicar sua audição. Desative-o com cuidado.</string>
+  <string name="notifications_category_title">Notificações</string>
+  <string name="less_notification_sounds_title">Reduzir frequência de sons de notificação</string>
+  <string name="less_notification_sounds_summary">Limitar sons de notificações de cada aplicativo para tocar uma vez por período de tempo definido</string>
+  <string name="less_notification_sounds_default">Comportamento padrão</string>
+  <string name="less_notification_sounds_3s">3 segundos</string>
+  <string name="less_notification_sounds_5s">5 segundos</string>
+  <string name="less_notification_sounds_10s">10 segundos</string>
+  <string name="less_notification_sounds_15s">15 segundos</string>
+  <string name="less_notification_sounds_30s">30 segundos</string>
+  <string name="less_notification_sounds_45s">45 segundos</string>
+  <string name="less_notification_sounds_1m">1 minuto</string>
+  <string name="less_notification_sounds_2m">2 minutos</string>
+  <string name="less_notification_sounds_5m">5 minutos</string>
+  <string name="volume_keys_control_media_stream">Controle de mídia</string>
+  <string name="volume_keys_control_media_stream_summary">Teclas de volume controlam volume de mídia, ao invés do volume de notificações</string>
+  <string name="display_category_wakeup_options_title">Opções de ativação</string>
+  <string name="pref_volume_wake_title">Ativar com botões de volume</string>
+  <string name="pref_volume_wake_summary">Ao pressionar um botão de volume, seu dispositivo irá acordar</string>
+  <string name="wakeup_when_plugged_unplugged_title">Acender Display ao carregar</string>
+  <string name="wakeup_when_plugged_unplugged_summary">Acender Display se o carregador estiver ligado/desligado</string>
 </resources>
