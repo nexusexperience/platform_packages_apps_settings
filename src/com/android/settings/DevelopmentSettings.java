@@ -151,6 +151,8 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
 
     private static final String SHOW_ALL_ANRS_KEY = "show_all_anrs";
 
+    private static final String KILL_APP_LONGPRESS_BACK = "kill_app_longpress_back";
+
     private static final String PROCESS_STATS = "proc_stats";
 
     private static final String TAG_CONFIRM_ENFORCE = "confirm_enforce";
@@ -230,6 +232,7 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
     private ListPreference mAppProcessLimit;
 
     private CheckBoxPreference mShowAllANRs;
+    private CheckBoxPreference mKillAppLongpressBack;
 
     private PreferenceScreen mProcessStats;
 
@@ -364,6 +367,8 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
         mAllPrefs.add(mShowAllANRs);
         mResetCbPrefs.add(mShowAllANRs);
 
+        mKillAppLongpressBack = findAndInitCheckboxPref(KILL_APP_LONGPRESS_BACK);
+
         Preference hdcpChecking = findPreference(HDCP_CHECKING_KEY);
         if (hdcpChecking != null) {
             mAllPrefs.add(hdcpChecking);
@@ -476,6 +481,7 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
             setPrefsEnabledState(mLastEnabledState);
         }
         mSwitchBar.show();
+        updateKillAppLongpressBackOptions();
     }
 
     @Override
@@ -608,6 +614,17 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
             hdcpChecking.setSummary(summaries[index]);
             hdcpChecking.setOnPreferenceChangeListener(this);
         }
+    }
+
+    private void writeKillAppLongpressBackOptions() {
+        Settings.Secure.putInt(getActivity().getContentResolver(),
+                Settings.Secure.KILL_APP_LONGPRESS_BACK,
+                mKillAppLongpressBack.isChecked() ? 1 : 0);
+    }
+
+    private void updateKillAppLongpressBackOptions() {
+        mKillAppLongpressBack.setChecked(Settings.Secure.getInt(
+            getActivity().getContentResolver(), Settings.Secure.KILL_APP_LONGPRESS_BACK, 0) != 0);
     }
 
     private void updatePasswordSummary() {
@@ -1441,6 +1458,8 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
             writeUSBAudioOptions();
         } else if (preference == mAdvancedReboot) {
             writeAdvancedRebootOptions();
+        } else if (preference == mKillAppLongpressBack) {
+            writeKillAppLongpressBackOptions();
         } else {
             return super.onPreferenceTreeClick(preferenceScreen, preference);
         }
