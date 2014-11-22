@@ -71,7 +71,6 @@ public class VolumeSeekBarPreference extends SeekBarPreference
     public void onActivityStop() {
         if (mVolumizer != null) {
             mVolumizer.stop();
-            mVolumizer = null;
         }
     }
 
