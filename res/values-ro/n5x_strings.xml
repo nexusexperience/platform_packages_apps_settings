@@ -16,7 +16,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="navigation_bar">Bara de navigare</string>
-  <string name="navigation_bar_height">Înălţime bara de navigare:</string>
+  <string name="navigation_bar_height">Înălţime bara de navigare</string>
   <string name="additional_settings_qs_statusbar_title">Bara de stare</string>
   <string name="status_bar_clock">Ora si data</string>
   <string name="status_bar_clock_title">Stilul orei si datei</string>

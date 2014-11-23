@@ -48,7 +48,6 @@ import android.preference.Preference;
 import android.preference.Preference.OnPreferenceClickListener;
 import android.preference.PreferenceCategory;
 import android.preference.PreferenceScreen;
-import android.preference.SeekBarPreference;
 import android.preference.SwitchPreference;
 import android.provider.SearchIndexableResource;
 import android.provider.Settings;
@@ -78,7 +77,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private static final String KEY_WAKEUP_CATEGORY = "category_wakeup_options";
     private static final String KEY_VOLUME_WAKE = "pref_volume_wake";
 
-    private static final String KEY_NAVIGATION_BAR_HEIGHT = "navigation_bar_height";
+    private static final String NAVIGATION_BAR_HEIGHT = "navigation_bar_height";
 
     private static final int DLG_GLOBAL_CHANGE_WARNING = 1;
 
@@ -97,7 +96,7 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private SwitchPreference mVolumeWake;
 
     /* Start of N5X Customizations */
-    private SeekBarPreference mNavigationBarHeight;
+    private ListPreference mNavigationBarHeight;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -184,11 +183,13 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
             removePreference(KEY_AUTO_ROTATE);
         }
 
-        mNavigationBarHeight = (SeekBarPreference) findPreference(KEY_NAVIGATION_BAR_HEIGHT);
-        mNavigationBarHeight.setProgress((int)(Settings.System.getFloat(getContentResolver(),
-                    Settings.System.NAVIGATION_BAR_HEIGHT, 1f) * 100));
-        mNavigationBarHeight.setTitle(getResources().getText(R.string.navigation_bar_height) + " " + mNavigationBarHeight.getProgress() + "%");
+        // navigation bar height
+        mNavigationBarHeight = (ListPreference) findPreference(NAVIGATION_BAR_HEIGHT);
         mNavigationBarHeight.setOnPreferenceChangeListener(this);
+        int statusNavigationBarHeight = Settings.System.getInt(getContentResolver(),
+                Settings.System.NAVIGATION_BAR_HEIGHT, 48);
+        mNavigationBarHeight.setValue(String.valueOf(statusNavigationBarHeight));
+        mNavigationBarHeight.setSummary(mNavigationBarHeight.getEntry());
 
         mWakeUpOptions = (PreferenceCategory) prefSet.findPreference(KEY_WAKEUP_CATEGORY);
         int counter = 0;
@@ -442,10 +443,12 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
             Settings.Secure.putInt(getContentResolver(), DOZE_ENABLED, value ? 1 : 0);
         }
         if (preference == mNavigationBarHeight) {
-            Settings.System.putFloat(getActivity().getContentResolver(),
-                    Settings.System.NAVIGATION_BAR_HEIGHT, (Integer)objValue / 100f);
-            mNavigationBarHeight.setTitle(getResources().getText(R.string.navigation_bar_height) + " " + (Integer)objValue + "%");
-            return true;
+            int statusNavigationBarHeight = Integer.valueOf((String) objValue);
+            int index = mNavigationBarHeight.findIndexOfValue((String) objValue);
+            Settings.System.putInt(getContentResolver(), NAVIGATION_BAR_HEIGHT,
+                    statusNavigationBarHeight);
+            mNavigationBarHeight.setSummary(mNavigationBarHeight.getEntries()[index]);
+        return true;
         }
         if (KEY_WAKEUP_WHEN_PLUGGED_UNPLUGGED.equals(key)) {
             Settings.System.putInt(getContentResolver(),

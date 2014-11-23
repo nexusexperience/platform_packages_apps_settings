@@ -16,7 +16,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="navigation_bar">Панель навигации</string>
-  <string name="navigation_bar_height">Высота панели навигации:</string>
+  <string name="navigation_bar_height">Высота панели навигации</string>
   <string name="additional_settings_qs_statusbar_title">Статус бар</string>
   <string name="status_bar_clock">Часы и дата</string>
   <string name="status_bar_clock_title">Стиль часов и даты</string>

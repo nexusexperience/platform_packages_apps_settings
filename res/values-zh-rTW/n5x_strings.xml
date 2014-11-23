@@ -16,7 +16,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="navigation_bar">導覽列</string>
-  <string name="navigation_bar_height">導覽列高度：</string>
+  <string name="navigation_bar_height">導覽列高度</string>
   <string name="additional_settings_qs_statusbar_title">狀態列</string>
   <string name="status_bar_clock">時鐘和日期</string>
   <string name="status_bar_clock_title">時鐘和日期樣式</string>

@@ -16,7 +16,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="navigation_bar">Barre de navigation</string>
-  <string name="navigation_bar_height">Hauteur de la barre de navigation :</string>
+  <string name="navigation_bar_height">Hauteur de la barre de navigation</string>
   <string name="additional_settings_qs_statusbar_title">Barre de notification</string>
   <string name="status_bar_clock">Date et heure</string>
   <string name="status_bar_clock_title">Style de la date et de l\'heure</string>

@@ -16,7 +16,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="navigation_bar">Thanh điều hướng</string>
-  <string name="navigation_bar_height">Độ cao thanh điều hướng:</string>
+  <string name="navigation_bar_height">Độ cao thanh điều hướng</string>
   <string name="additional_settings_qs_statusbar_title">Thanh trạng thái</string>
   <string name="status_bar_clock">Đồng hồ và ngày</string>
   <string name="status_bar_clock_title">Phong cách đồng hồ và ngày</string>

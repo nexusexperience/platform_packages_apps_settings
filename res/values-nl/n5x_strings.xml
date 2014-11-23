@@ -16,7 +16,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="navigation_bar">Navigatiebalk</string>
-  <string name="navigation_bar_height">Navigatiebalk hoogte:</string>
+  <string name="navigation_bar_height">Navigatiebalk hoogte</string>
   <string name="additional_settings_qs_statusbar_title">Statusbalk</string>
   <string name="status_bar_clock">Klok en datum</string>
   <string name="status_bar_clock_title">Klok en datum stijl</string>

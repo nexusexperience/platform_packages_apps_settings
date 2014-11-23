@@ -16,7 +16,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="navigation_bar">Navigační lišta</string>
-  <string name="navigation_bar_height">Výška navigační lišty:</string>
+  <string name="navigation_bar_height">Výška navigační lišty</string>
   <string name="additional_settings_qs_statusbar_title">Stavová lišta</string>
   <string name="status_bar_clock">Hodiny a datum</string>
   <string name="status_bar_clock_title">Styl data a času</string>

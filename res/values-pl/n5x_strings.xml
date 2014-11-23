@@ -16,7 +16,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="navigation_bar">Pasek nawigacji</string>
-  <string name="navigation_bar_height">Wysokość paska nawigacji:</string>
+  <string name="navigation_bar_height">Wysokość paska nawigacji</string>
   <string name="additional_settings_qs_statusbar_title">Pasek stanu</string>
   <string name="status_bar_clock">Zegar i data</string>
   <string name="status_bar_clock_title">Wygląd zegara i daty</string>

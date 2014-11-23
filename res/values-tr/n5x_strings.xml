@@ -16,7 +16,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="navigation_bar">Sanal tuş</string>
-  <string name="navigation_bar_height">Sanal tuş büyüklüğü:</string>
+  <string name="navigation_bar_height">Sanal tuş büyüklüğü</string>
   <string name="additional_settings_qs_statusbar_title">Durum çubuğu</string>
   <string name="status_bar_clock">Saat ve tarih</string>
   <string name="status_bar_clock_title">Saat ve tarih biçimi</string>
