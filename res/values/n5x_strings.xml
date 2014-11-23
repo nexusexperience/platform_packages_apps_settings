@@ -154,4 +154,12 @@
 
     <!-- Volume adjust sound -->
     <string name="volume_key_adjust_sound_title">Volume key adjustment sound</string>
+
+    <!-- Double-tap to sleep -->
+    <string name="status_bar_double_tap_to_sleep_title">Double-tap to sleep</string>
+    <string name="status_bar_double_tap_to_sleep_summary">Turn off the screen with a double-tap on the status bar</string>
+
+    <!-- Status bar brightness -->
+    <string name="status_bar_toggle_brightness">Brightness control</string>
+    <string name="status_bar_toggle_brightness_summary">Adjust brightness by sliding across the status bar</string>
 </resources>
