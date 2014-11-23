@@ -162,4 +162,8 @@
     <!-- Status bar brightness -->
     <string name="status_bar_toggle_brightness">Brightness control</string>
     <string name="status_bar_toggle_brightness_summary">Adjust brightness by sliding across the status bar</string>
+
+    <!-- Status bar quick pulldown -->
+    <string name="status_bar_quick_qs_pulldown_title">Quick pull down</string>
+    <string name="status_bar_quick_qs_pulldown_summary">Right edge of the status bar pulls down Quick Settings</string>
 </resources>
