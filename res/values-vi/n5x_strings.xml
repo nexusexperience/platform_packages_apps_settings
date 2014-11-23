@@ -51,7 +51,7 @@
   <string name="network_traffic_title">Mạng</string>
   <string name="show_network_traffic_state">Tốc độ truyền trên thanh trạng thái</string>
   <string name="show_network_traffic_unit">Đơn vị hiển thị</string>
-  <string name="show_network_traffic_frequency">Khoảng thời gian cập Nhật</string>
+  <string name="show_network_traffic_frequency">Khoảng thời gian cập nhật</string>
   <string name="show_network_traffic_disable">Đã vô hiệu hóa</string>
   <string name="show_network_traffic_up">Gửi đi</string>
   <string name="show_network_traffic_down">Truyền đến</string>
@@ -75,12 +75,12 @@
   <string name="disable_fullscreen_keyboard_title">Vô hiệu hóa bàn phím toàn màn hình</string>
   <string name="disable_fullscreen_keyboard_summary">Bàn phím nằm ngang sẽ không chiếm toàn màn hình</string>
   <string name="volume_key_cursor_control_title">Điều khiển con trỏ bằng phím âm lượng</string>
-  <string name="volume_key_cursor_control_on">Phim tăng/giảm âm lượng di chuyển con trỏ sang trái/phải</string>
-  <string name="volume_key_cursor_control_on_reverse">Phim tăng/giảm âm lượng di chuyển con trỏ sang phải/trái</string>
+  <string name="volume_key_cursor_control_on">Phím tăng/giảm âm lượng di chuyển con trỏ sang trái/phải</string>
+  <string name="volume_key_cursor_control_on_reverse">Phím tăng/giảm âm lượng di chuyển con trỏ sang phải/trái</string>
   <string name="keyboard_rotation_toggle_title">Tự động xoay bàn phím</string>
   <string name="keyboard_rotation_toggle_summary">Bắt buộc tự động xoay khi bàn phím được hiển thị</string>
-  <string name="keyboard_rotation_timeout_title">Thời gian tự động xoay</string>
-  <string name="keyboard_rotation_timeout_summary">Vô hiệu hóa cảm biến tự động xoay <xliff:g id="rotate_timeout">%1$s</xliff:g> giây sau khi bàn phím được ẩn</string>
+  <string name="keyboard_rotation_timeout_title">Thời gian tắt tự động xoay</string>
+  <string name="keyboard_rotation_timeout_summary">Vô hiệu hóa cảm biến tự động xoay <xliff:g id="rotate_timeout">%1$s</xliff:g> sau khi bàn phím được ẩn</string>
   <string name="keyboard_rotation_dialog">Tính năng này bắt buộc bật tự động xoay tạm thời trong khi bàn phím được hiển thị. Không có ảnh hưởng khi tự động xoay đã được kích hoạt sẵn.</string>
   <string name="show_enter_key_title">Hiện phím enter</string>
   <string name="show_enter_key_summary">Bắt buộc bàn phím hiện phím enter thay vì phím biểu tượng cảm xúc</string>
