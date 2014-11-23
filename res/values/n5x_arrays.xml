@@ -185,10 +185,4 @@
         <item>120000</item>
         <item>300000</item>
     </string-array>
-
-    <!-- System app remover -->
-    <string-array name="slimsizer_profile_array">
-        <item>Load Profile</item>
-        <item>Save Profile</item>
-    </string-array>
 </resources>
