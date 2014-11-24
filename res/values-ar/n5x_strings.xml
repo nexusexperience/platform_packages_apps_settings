@@ -16,7 +16,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="navigation_bar">شريط التنقل</string>
-  <string name="navigation_bar_height">ارتفاع شريط التنقل</string>
+  <string name="navigation_bar_height">ارتفاع شريط التنقل:</string>
   <string name="additional_settings_qs_statusbar_title">شريط الحالة</string>
   <string name="status_bar_clock">الوقت و التاريخ</string>
   <string name="status_bar_clock_title">شكل الساعة والتاريخ</string>

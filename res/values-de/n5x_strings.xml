@@ -16,7 +16,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="navigation_bar">Navigationsleiste</string>
-  <string name="navigation_bar_height">Höhe der Navigationsleiste</string>
+  <string name="navigation_bar_height">Höhe der Navigationsleiste:</string>
   <string name="additional_settings_qs_statusbar_title">Statusleiste</string>
   <string name="status_bar_clock">Uhrzeit und Datum</string>
   <string name="status_bar_clock_title">Stil von Uhrzeit und Datum</string>
