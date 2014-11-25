@@ -117,4 +117,18 @@
   <string name="pref_volume_wake_summary">Presionar los botones de volumen arriba/abajo encenderá el dispositivo</string>
   <string name="wakeup_when_plugged_unplugged_title">Encender pantalla durante la carga</string>
   <string name="wakeup_when_plugged_unplugged_summary">Enciende la pantalla cuando se enchufa o desenchufa el cargador</string>
+  <string name="increasing_ring_volume_option_title">Volúmen de timbre creciente</string>
+  <string name="increasing_ring_min_volume_title">Volúmen inicial</string>
+  <string name="increasing_ring_ramp_up_time_title">Tiempo de incremento</string>
+  <string name="advanced_reboot_title">Reinicio avanzado</string>
+  <string name="advanced_reboot_summary">Cuando el dispositivo esté desbloqueado, incluye opciones en el menú de apagado para reiniciar en modo recovery, bootloader o reinicio suave</string>
+  <string name="kill_app_longpress_back">Matar aplicación con botón de volver</string>
+  <string name="kill_app_longpress_back_summary">Matar la aplicación que está en primer plano al mantener presionado el botón de volver</string>
+  <string name="volume_key_adjust_sound_title">Botón de volumen</string>
+  <string name="status_bar_double_tap_to_sleep_title">Doble toque para apagar la pantalla</string>
+  <string name="status_bar_double_tap_to_sleep_summary">Apagar la pantalla con doble toque en la barra de estado</string>
+  <string name="status_bar_toggle_brightness">Control de brillo</string>
+  <string name="status_bar_toggle_brightness_summary">Ajusta el brillo deslizando el dedo en la barra de estado</string>
+  <string name="status_bar_quick_qs_pulldown_title">Desplegable rapido</string>
+  <string name="status_bar_quick_qs_pulldown_summary">Arrastra desde la esquina superior derecha para abrir ajustes de forma rápida</string>
 </resources>

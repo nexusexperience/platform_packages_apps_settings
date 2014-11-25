@@ -117,4 +117,18 @@
   <string name="pref_volume_wake_summary">Tasti volume accendono schermo</string>
   <string name="wakeup_when_plugged_unplugged_title">Attivo quando in carica</string>
   <string name="wakeup_when_plugged_unplugged_summary">Attiva alla connessione/sconnessione USB</string>
+  <string name="increasing_ring_volume_option_title">Suoneria incrementale</string>
+  <string name="increasing_ring_min_volume_title">Volume all\'inizio</string>
+  <string name="increasing_ring_ramp_up_time_title">Durata aumento</string>
+  <string name="advanced_reboot_title">Riavvio avanzato</string>
+  <string name="advanced_reboot_summary">Quando sbloccato, include opzioni nel menù di spegnimento per il riavvio in modalità recovery, bootloader o riavvio soft</string>
+  <string name="kill_app_longpress_back">Kill App con tasto indietro</string>
+  <string name="kill_app_longpress_back_summary">Chiude le App recenti con una lunga pressione del tasto indietro</string>
+  <string name="volume_key_adjust_sound_title">I tasti volume regolano il suono</string>
+  <string name="status_bar_double_tap_to_sleep_title">Doppio-tap per spegnere il display</string>
+  <string name="status_bar_double_tap_to_sleep_summary">Spegni lo schermo con un doppio tap sulla status bar</string>
+  <string name="status_bar_toggle_brightness">Controllo della luminosità</string>
+  <string name="status_bar_toggle_brightness_summary">Regola la luminosità con uno swipe sulla status bar</string>
+  <string name="status_bar_quick_qs_pulldown_title">Visualizzazione rapida</string>
+  <string name="status_bar_quick_qs_pulldown_summary">Angolo destro apre le impostazioni veloci</string>
 </resources>

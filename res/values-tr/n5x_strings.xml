@@ -117,4 +117,18 @@
   <string name="pref_volume_wake_summary">Aşağı/yukarı ses tuşları cihaz ekranını uyandırır</string>
   <string name="wakeup_when_plugged_unplugged_title">Şarj oluyorken uyandır</string>
   <string name="wakeup_when_plugged_unplugged_summary">Şarja takıldığında/çıkarıldığında cihazı uyandır</string>
+  <string name="increasing_ring_volume_option_title">Artan zil sesi</string>
+  <string name="increasing_ring_min_volume_title">Başlangıç sesi</string>
+  <string name="increasing_ring_ramp_up_time_title">Yükselme zamanı</string>
+  <string name="advanced_reboot_title">Gelişmiş yeniden başlatma</string>
+  <string name="advanced_reboot_summary">Ekran kilitli değilken güç menüsünde kurtarma, önyükleyici ya da hızlı yeniden başlatma seçeneklerini içerir</string>
+  <string name="kill_app_longpress_back">Geri tuşu ile uygulamaları sonlandırma</string>
+  <string name="kill_app_longpress_back_summary">Geri tuşuna uzun basarak ön plandaki uygulamaları sonlandırır</string>
+  <string name="volume_key_adjust_sound_title">Ses tuşlarıyla ses ayarlaması</string>
+  <string name="status_bar_double_tap_to_sleep_title">Çift Tıklama ile uyutma</string>
+  <string name="status_bar_double_tap_to_sleep_summary">Durum çubuğuna çift tıklama ile ekranı kapatın</string>
+  <string name="status_bar_toggle_brightness">Parlaklık kontrolü</string>
+  <string name="status_bar_toggle_brightness_summary">Durum çubuğunu kaydırarak parlaklığı ayarla</string>
+  <string name="status_bar_quick_qs_pulldown_title">Hızlı aşağı çekme</string>
+  <string name="status_bar_quick_qs_pulldown_summary">Durum çubuğunun sağ kenarı Hızlı Ayarların tamamını aşağı çeker</string>
 </resources>

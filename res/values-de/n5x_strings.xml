@@ -117,4 +117,18 @@
   <string name="pref_volume_wake_summary">Durch Drücken der Volume Up/Down-Taste wird das Gerät geweckt</string>
   <string name="wakeup_when_plugged_unplugged_title">Aufwecken beim Laden</string>
   <string name="wakeup_when_plugged_unplugged_summary">Gerät aufwecken wenn das Ladegerät angeschlossen/abgesteckt wird</string>
+  <string name="increasing_ring_volume_option_title">Ansteigende Ruftonlautstärke</string>
+  <string name="increasing_ring_min_volume_title">Anfangslautstärke</string>
+  <string name="increasing_ring_ramp_up_time_title">Anstiegszeit</string>
+  <string name="advanced_reboot_title">Erweiterte Neustart Optionen</string>
+  <string name="advanced_reboot_summary">Wenn entsperrt, sind im Power Menü Optionen zum Neustart ins Recovery, den Bootloader oder einen sanften Neustart enthalten</string>
+  <string name="kill_app_longpress_back">Aktuelle App bei gedrückt halten der Zurück Taste beenden</string>
+  <string name="kill_app_longpress_back_summary">Aktuelle App bei gedrückt halten der Zurück Taste schließen</string>
+  <string name="volume_key_adjust_sound_title">Lautstärke Regelung Signal ton</string>
+  <string name="status_bar_double_tap_to_sleep_title">Doppel tippen zum Sperren</string>
+  <string name="status_bar_double_tap_to_sleep_summary">Gerät bei doppeltem tippen der Statusbar Sperren</string>
+  <string name="status_bar_toggle_brightness">Helligkeitsregelung</string>
+  <string name="status_bar_toggle_brightness_summary">Helligkeit durch streichen über die Statusbar regeln</string>
+  <string name="status_bar_quick_qs_pulldown_title">Schnell Einstellungen</string>
+  <string name="status_bar_quick_qs_pulldown_summary">Runterziehen der rechten Ecke der Statusbar ruft Schnell Einstellungen auf</string>
 </resources>

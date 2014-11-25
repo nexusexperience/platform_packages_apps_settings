@@ -117,4 +117,18 @@
   <string name="pref_volume_wake_summary">Appuyer sur les boutons volume +/- allume l\'écran</string>
   <string name="wakeup_when_plugged_unplugged_title">Allumer l\'écran lors de la charge</string>
   <string name="wakeup_when_plugged_unplugged_summary">Allumer l\'écran si le chargeur est branché</string>
+  <string name="increasing_ring_volume_option_title">Augmenter le volume de la sonnerie</string>
+  <string name="increasing_ring_min_volume_title">Volume de démarrage</string>
+  <string name="increasing_ring_ramp_up_time_title">Temps de montée</string>
+  <string name="advanced_reboot_title">Redémarrage avancé</string>
+  <string name="advanced_reboot_summary">Lorsque le telephone est déverrouillé, inclus des options dans le menu d\'alimentation pour redémarrer en recovery, bootloader ou effectuer un redémarrage doux</string>
+  <string name="kill_app_longpress_back">Bouton retour tueur d\'application</string>
+  <string name="kill_app_longpress_back_summary">Tuer les applications en arrière plan par appui long sur le bouton retour</string>
+  <string name="volume_key_adjust_sound_title">Son du bouton de réglage du volume</string>
+  <string name="status_bar_double_tap_to_sleep_title">Double tape pour verrouiller</string>
+  <string name="status_bar_double_tap_to_sleep_summary">Éteindre l\'écran avec un double-tap sur la barre d\'état</string>
+  <string name="status_bar_toggle_brightness">Réglage de la luminosité</string>
+  <string name="status_bar_toggle_brightness_summary">Ajuster la luminosité en faisant glisser votre doigt sur la barre d\'état</string>
+  <string name="status_bar_quick_qs_pulldown_title">Menu déroulant d\'accès rapides</string>
+  <string name="status_bar_quick_qs_pulldown_summary">Le bord droit de la barre d\'état tiré vers le bas developpe les réglages rapides</string>
 </resources>

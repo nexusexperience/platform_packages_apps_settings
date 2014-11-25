@@ -117,4 +117,18 @@
   <string name="pref_volume_wake_summary">Нажатие качельки регулировки громкости вверх/вниз разбудит устройство</string>
   <string name="wakeup_when_plugged_unplugged_title">Пробуждение при зарядке</string>
   <string name="wakeup_when_plugged_unplugged_summary">Разбудить устройство при подключении/отключении зарядного устройства</string>
+  <string name="increasing_ring_volume_option_title">Нарастающая громкость звонка</string>
+  <string name="increasing_ring_min_volume_title">Начальная громкость</string>
+  <string name="increasing_ring_ramp_up_time_title">Время увеличения</string>
+  <string name="advanced_reboot_title">Расширеная перезагрузка</string>
+  <string name="advanced_reboot_summary">Когда разблокировано, включая параметры в меню выключения для перезагрузки в восстановления загрузчика или выполнения мягкой перезагрузки</string>
+  <string name="kill_app_longpress_back">Кнопка \"назад\" - закрыть приложение</string>
+  <string name="kill_app_longpress_back_summary">Завершение приложения по длительному нажатию кнопки Назад</string>
+  <string name="volume_key_adjust_sound_title">Регулировка звука кнопками громкости</string>
+  <string name="status_bar_double_tap_to_sleep_title">Двойной тап для сна</string>
+  <string name="status_bar_double_tap_to_sleep_summary">Выключить экран при двойном тапе по статус бару</string>
+  <string name="status_bar_toggle_brightness">Регулировка яркости</string>
+  <string name="status_bar_toggle_brightness_summary">Настройте яркость скольжением вдоль статус бара</string>
+  <string name="status_bar_quick_qs_pulldown_title">Быстрый доступ</string>
+  <string name="status_bar_quick_qs_pulldown_summary">Правый край статус бара вызывает панель быстрых настроек</string>
 </resources>
