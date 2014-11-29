@@ -101,6 +101,10 @@
     <string name="ime_switcher_notify">Selector button</string>
     <string name="ime_switcher_notify_summary">Display input method selector button in navigation bar</string>
 
+     <!--Volume buttons music control-->
+     <string name="volume_music_controls_title">Playback control</string>
+     <string name="volume_music_controls_summary">When the screen is off, long pressing the volume buttons will seek music tracks</string>
+
     <!-- General strings -->
     <string name="ok">OK</string>
     <string name="reset">Reset</string>
@@ -228,4 +232,8 @@
     <string name="root_access_apps">Apps only</string>
     <string name="root_access_adb">ADB only</string>
     <string name="root_access_all">Apps and ADB</string>
+
+    <!-- Clear all recents button enabler strings -->
+    <string name="clear_all_recents_enabled_title">Clear all recents button</string>
+    <string name="clear_all_recents_enabled_summary">Show clear all recents button in recents app screen</string>
 </resources>
