@@ -101,10 +101,6 @@
     <string name="ime_switcher_notify">Selector button</string>
     <string name="ime_switcher_notify_summary">Display input method selector button in navigation bar</string>
 
-     <!--Volume buttons music control-->
-     <string name="volume_music_controls_title">Playback control</string>
-     <string name="volume_music_controls_summary">When the screen is off, long pressing the volume buttons will seek music tracks</string>
-
     <!-- General strings -->
     <string name="ok">OK</string>
     <string name="reset">Reset</string>
@@ -236,4 +232,8 @@
     <!-- Clear all recents button enabler strings -->
     <string name="clear_all_recents_enabled_title">Clear all recents button</string>
     <string name="clear_all_recents_enabled_summary">Show clear all recents button in recents app screen</string>
+
+    <!-- Left clear all recents button strings -->
+    <string name="left_clear_all_recents_title">Clear all recents button on left</string>
+    <string name="left_clear_all_recents_summary">Move clear all recents button to bottom left instead of bottom center</string>
 </resources>
