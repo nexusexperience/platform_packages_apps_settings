@@ -53,9 +53,9 @@
   <string name="show_network_traffic_unit">Unidades</string>
   <string name="show_network_traffic_frequency">Intervalo de refrescamento</string>
   <string name="show_network_traffic_disable">Inativo</string>
-  <string name="show_network_traffic_up">Saída</string>
-  <string name="show_network_traffic_down">Entrada</string>
-  <string name="show_network_traffic_all">Saída e entrada</string>
+  <string name="show_network_traffic_up">Tráfego de saída</string>
+  <string name="show_network_traffic_down">Tráfego de entrada</string>
+  <string name="show_network_traffic_all">Tráfego de saída e entrada</string>
   <string name="show_network_traffic_bit">Bits por segundo</string>
   <string name="show_network_traffic_byte">Bytes por segundo</string>
   <string name="show_network_traffic_500">500 ms</string>
@@ -117,4 +117,18 @@
   <string name="pref_volume_wake_summary">Pressionar os botões de volume de som +/- acorda o dispositivo</string>
   <string name="wakeup_when_plugged_unplugged_title">Acordar em carga</string>
   <string name="wakeup_when_plugged_unplugged_summary">Acordar o dispositivo se o carregador for ligado/desligado</string>
+  <string name="increasing_ring_volume_option_title">Aumentar volume de toque</string>
+  <string name="increasing_ring_min_volume_title">Volume inicial</string>
+  <string name="increasing_ring_ramp_up_time_title">Tempo de subida</string>
+  <string name="advanced_reboot_title">Reinicialização avançada</string>
+  <string name="advanced_reboot_summary">Quando desbloqueado, incluir opções para reinicializar para a recuperação, bootloader e reinicialização suave</string>
+  <string name="kill_app_longpress_back">Terminar aplicação utilizando o botão  de voltar para trás</string>
+  <string name="kill_app_longpress_back_summary">Termina a aplicação em primeiro plano pressionando prolongadamente o botão de voltar para trás</string>
+  <string name="volume_key_adjust_sound_title">Som do botão de ajuste de volume</string>
+  <string name="status_bar_double_tap_to_sleep_title">Utilizar duplo toque para dormir</string>
+  <string name="status_bar_double_tap_to_sleep_summary">Desligar o ecrã com um duplo toque na barra de estado</string>
+  <string name="status_bar_toggle_brightness">Controlo de luminosidade</string>
+  <string name="status_bar_toggle_brightness_summary">Ajustar a luminosidade deslizando pela barra de estado</string>
+  <string name="status_bar_quick_qs_pulldown_title">Puxar rápido para baixo</string>
+  <string name="status_bar_quick_qs_pulldown_summary">Tocar na parte direita da barra de estado mostra as configurações rápidas</string>
 </resources>

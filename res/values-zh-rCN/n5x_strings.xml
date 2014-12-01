@@ -117,4 +117,18 @@
   <string name="pref_volume_wake_summary">按下音量键向上/向下的将唤醒设备</string>
   <string name="wakeup_when_plugged_unplugged_title">充电时唤醒</string>
   <string name="wakeup_when_plugged_unplugged_summary">当插入或拔出充电器时唤醒设备</string>
+  <string name="increasing_ring_volume_option_title">增加铃声音量</string>
+  <string name="increasing_ring_min_volume_title">起始音量</string>
+  <string name="increasing_ring_ramp_up_time_title">过渡时间</string>
+  <string name="advanced_reboot_title">高级重启</string>
+  <string name="advanced_reboot_summary">开启后，电源菜单选项将包含重启进入恢复模式、引导模式和软重启。</string>
+  <string name="kill_app_longpress_back">返回键终止应用</string>
+  <string name="kill_app_longpress_back_summary">长按返回键终止应用程序</string>
+  <string name="volume_key_adjust_sound_title">音量键调整声音</string>
+  <string name="status_bar_double_tap_to_sleep_title">双击休眠</string>
+  <string name="status_bar_double_tap_to_sleep_summary">双击状态栏关闭屏幕</string>
+  <string name="status_bar_toggle_brightness">亮度控制</string>
+  <string name="status_bar_toggle_brightness_summary">通过滑动状态栏调整亮度</string>
+  <string name="status_bar_quick_qs_pulldown_title">快捷下拉</string>
+  <string name="status_bar_quick_qs_pulldown_summary">状态栏右边缘下拉打开快捷设置</string>
 </resources>
