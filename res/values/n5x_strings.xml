@@ -229,6 +229,9 @@
     <string name="root_access_adb">ADB only</string>
     <string name="root_access_all">Apps and ADB</string>
 
+    <!-- Recent panel settings strings -->
+    <string name="recent_settings_title" >Clear all recents settings</string>
+
     <!-- Clear all recents button enabler strings -->
     <string name="clear_all_recents_enabled_title">Clear all recents button</string>
     <string name="clear_all_recents_enabled_summary">Show clear all recents button in recents app screen</string>
@@ -236,4 +239,8 @@
     <!-- Left clear all recents button strings -->
     <string name="left_clear_all_recents_title">Clear all recents button on left</string>
     <string name="left_clear_all_recents_summary">Move clear all recents button to bottom left instead of bottom center</string>
+
+    <!-- Clear all recents on navbar enabler strings -->
+    <string name="clear_all_recents_navbar_enabled_title">Clear all recents button on Navbar</string>
+    <string name="clear_all_recents_navbar_enabled_summary">Show clear all recents button in navigation bar</string>
 </resources>
