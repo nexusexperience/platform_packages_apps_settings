@@ -230,7 +230,7 @@
     <string name="root_access_all">Apps and ADB</string>
 
     <!-- Recent panel settings strings -->
-    <string name="recent_settings_title" >Clear all recents settings</string>
+    <string name="recent_settings_title" >Recents screen settings</string>
 
     <!-- Clear all recents button enabler strings -->
     <string name="clear_all_recents_enabled_title">Clear all recents button</string>
@@ -243,4 +243,8 @@
     <!-- Clear all recents on navbar enabler strings -->
     <string name="clear_all_recents_navbar_enabled_title">Clear all recents button on Navbar</string>
     <string name="clear_all_recents_navbar_enabled_summary">Show clear all recents button in navigation bar</string>
+
+    <!-- Search widget in recents enabler strings -->
+    <string name="search_widget_enabled_title">Search widget</string>
+    <string name="search_widget_enabled_summary">Show search widget in recents app screen</string>
 </resources>
