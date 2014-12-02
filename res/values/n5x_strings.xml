@@ -257,4 +257,8 @@
     <!-- Disable quicksettings on keyguard -->
     <string name="block_on_secure_keyguard_title">Quick settings on lockscreen</string>
     <string name="block_on_secure_keyguard_summary">Disable quick settings on secure lockscreen.</string>
+
+    <!-- Statusbar header weather -->
+    <string name="status_bar_show_weather_title">Show weather</string>
+    <string name="status_bar_show_weather_summary">Show the weather in the status bar header</string>
 </resources>
