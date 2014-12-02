@@ -168,10 +168,6 @@
     <string name="status_bar_toggle_brightness">Brightness control</string>
     <string name="status_bar_toggle_brightness_summary">Adjust brightness by sliding across the status bar</string>
 
-    <!-- Status bar quick pulldown -->
-    <string name="status_bar_quick_qs_pulldown_title">Quick pull down</string>
-    <string name="status_bar_quick_qs_pulldown_summary">Right edge of the status bar pulls down Quick Settings</string>
-
     <!-- Notification light dialogs -->
     <string name="edit_light_settings">Edit light settings</string>
     <string name="pulse_speed_title">Pulse length and speed</string>
@@ -247,4 +243,14 @@
     <!-- Search widget in recents enabler strings -->
     <string name="search_widget_enabled_title">Search widget</string>
     <string name="search_widget_enabled_summary">Show search widget in recents app screen</string>
+
+    <!-- Display advanced settings -->
+    <string name="nx_title">Advanced options</string>
+
+    <!-- QuickSettings: Quick Pulldown -->
+    <string name="title_quick_pulldown">Quick pulldown</string>
+    <string name="summary_quick_pulldown">%1$s edge of the status bar pulls down Quick Settings</string>
+    <string name="quick_pulldown_off">Off</string>
+    <string name="quick_pulldown_left">Left</string>
+    <string name="quick_pulldown_right">Right</string>
 </resources>
