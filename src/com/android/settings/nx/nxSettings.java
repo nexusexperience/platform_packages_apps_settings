@@ -53,6 +53,7 @@ public class nxSettings extends SettingsPreferenceFragment
     /* Start of N5X Customizations */
     private SeekBarPreference mNavigationBarHeight;
     ListPreference mQuickPulldown;
+    SwitchPreference mBlockOnSecureKeyguard;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -105,7 +106,6 @@ public class nxSettings extends SettingsPreferenceFragment
                     statusQuickPulldown);
             updateQuickPulldownSummary(statusQuickPulldown);
             return true;
-        }
         } else if (preference == mBlockOnSecureKeyguard) {
             Settings.Secure.putInt(getContentResolver(),
                     Settings.Secure.STATUS_BAR_LOCKED_ON_SECURE_KEYGUARD,
@@ -113,8 +113,8 @@ public class nxSettings extends SettingsPreferenceFragment
             return true;
         } else if (preference == mNavigationBarHeight) {
             Settings.System.putFloat(getActivity().getContentResolver(),
-                    Settings.System.NAVIGATION_BAR_HEIGHT, (Integer)objValue / 100f);
-            mNavigationBarHeight.setTitle(getResources().getText(R.string.navigation_bar_height) + " " + (Integer)objValue + "%");
+                    Settings.System.NAVIGATION_BAR_HEIGHT, (Integer)newValue / 100f);
+            mNavigationBarHeight.setTitle(getResources().getText(R.string.navigation_bar_height) + " " + (Integer)newValue + "%");
             return true;
         }
         return false;
