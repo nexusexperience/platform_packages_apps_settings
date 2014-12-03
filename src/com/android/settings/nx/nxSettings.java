@@ -51,7 +51,7 @@ public class nxSettings extends SettingsPreferenceFragment
     private static final String KEY_NAVIGATION_BAR_HEIGHT = "navigation_bar_height";
     private static final String PREF_QUICK_PULLDOWN = "quick_pulldown";
     private static final String PREF_BLOCK_ON_SECURE_KEYGUARD = "block_on_secure_keyguard";
-    private static final String ADDITIONAL_SETTINGS_QS_STATUSBAR_TITLE = "additional_settings_qs_statusbar_title";
+    private static final String STATUSBAR_CATEGORY = "statusbar_category";
     private static final String KEY_LOCK_CLOCK = "lock_clock";
 
     /* Start of N5X Customizations */
@@ -68,11 +68,11 @@ public class nxSettings extends SettingsPreferenceFragment
         PreferenceScreen prefs = getPreferenceScreen();
 
         PreferenceCategory statusbarCategory = (PreferenceCategory)
-                findPreference(ADDITIONAL_SETTINGS_QS_STATUSBAR_TITLE);
+                prefs.findPreference(STATUSBAR_CATEGORY);
 
         mQuickPulldown = (ListPreference) findPreference(PREF_QUICK_PULLDOWN);
         if (!DeviceUtils.isPhone(getActivity())) {
-            prefs.removePreference(mQuickPulldown);
+            statusbarCategory.removePreference(mQuickPulldown);
         } else {
             // Quick Pulldown
             mQuickPulldown.setOnPreferenceChangeListener(this);
@@ -83,18 +83,18 @@ public class nxSettings extends SettingsPreferenceFragment
         }
 
         final LockPatternUtils lockPatternUtils = new LockPatternUtils(getActivity());
-        mBlockOnSecureKeyguard = (SwitchPreference) findPreference(PREF_BLOCK_ON_SECURE_KEYGUARD);
+        mBlockOnSecureKeyguard = (SwitchPreference) prefs.findPreference(PREF_BLOCK_ON_SECURE_KEYGUARD);
         if (lockPatternUtils.isSecure()) {
             mBlockOnSecureKeyguard.setChecked(Settings.Secure.getInt(getContentResolver(),
                     Settings.Secure.STATUS_BAR_LOCKED_ON_SECURE_KEYGUARD, 1) == 1);
             mBlockOnSecureKeyguard.setOnPreferenceChangeListener(this);
         } else {
-            prefs.removePreference(mBlockOnSecureKeyguard);
+            statusbarCategory.removePreference(mBlockOnSecureKeyguard);
         }
 
         // Remove cLock settings item if not installed
         if (!Utils.isPackageInstalled(getActivity(), "com.cyanogenmod.lockclock")) {
-            statusbarCategory.removePreference(findPreference(KEY_LOCK_CLOCK));
+            statusbarCategory.removePreference(prefs.findPreference(KEY_LOCK_CLOCK));
         }
 
         mNavigationBarHeight = (SeekBarPreference) findPreference(KEY_NAVIGATION_BAR_HEIGHT);
