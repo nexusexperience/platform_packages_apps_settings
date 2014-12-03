@@ -86,7 +86,7 @@ public class nxSettings extends SettingsPreferenceFragment
         mBlockOnSecureKeyguard = (SwitchPreference) prefs.findPreference(PREF_BLOCK_ON_SECURE_KEYGUARD);
         if (lockPatternUtils.isSecure()) {
             mBlockOnSecureKeyguard.setChecked(Settings.Secure.getInt(getContentResolver(),
-                    Settings.Secure.STATUS_BAR_LOCKED_ON_SECURE_KEYGUARD, 1) == 1);
+                    Settings.Secure.STATUS_BAR_LOCKED_ON_SECURE_KEYGUARD, 0) == 1);
             mBlockOnSecureKeyguard.setOnPreferenceChangeListener(this);
         } else {
             statusbarCategory.removePreference(mBlockOnSecureKeyguard);
