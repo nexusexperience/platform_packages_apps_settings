@@ -25,6 +25,7 @@ import android.os.Bundle;
 import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.Preference.OnPreferenceChangeListener;
+import android.preference.PreferenceCategory;
 import android.preference.PreferenceScreen;
 import android.preference.SeekBarPreference;
 import android.preference.SwitchPreference;
@@ -37,6 +38,7 @@ import com.android.internal.widget.LockPatternUtils;
 
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.R;
+import com.android.settings.Utils;
 
 import java.util.Locale;
 
@@ -49,6 +51,8 @@ public class nxSettings extends SettingsPreferenceFragment
     private static final String KEY_NAVIGATION_BAR_HEIGHT = "navigation_bar_height";
     private static final String PREF_QUICK_PULLDOWN = "quick_pulldown";
     private static final String PREF_BLOCK_ON_SECURE_KEYGUARD = "block_on_secure_keyguard";
+    private static final String ADDITIONAL_SETTINGS_QS_STATUSBAR_TITLE = "additional_settings_qs_statusbar_title";
+    private static final String KEY_LOCK_CLOCK = "lock_clock";
 
     /* Start of N5X Customizations */
     private SeekBarPreference mNavigationBarHeight;
@@ -62,6 +66,9 @@ public class nxSettings extends SettingsPreferenceFragment
         addPreferencesFromResource(R.xml.nx_settings);
 
         PreferenceScreen prefs = getPreferenceScreen();
+
+        PreferenceCategory statusbarCategory = (PreferenceCategory)
+                findPreference(ADDITIONAL_SETTINGS_QS_STATUSBAR_TITLE);
 
         mQuickPulldown = (ListPreference) findPreference(PREF_QUICK_PULLDOWN);
         if (!DeviceUtils.isPhone(getActivity())) {
@@ -83,6 +90,11 @@ public class nxSettings extends SettingsPreferenceFragment
             mBlockOnSecureKeyguard.setOnPreferenceChangeListener(this);
         } else {
             prefs.removePreference(mBlockOnSecureKeyguard);
+        }
+
+        // Remove cLock settings item if not installed
+        if (!Utils.isPackageInstalled(getActivity(), "com.cyanogenmod.lockclock")) {
+            statusbarCategory.removePreference(findPreference(KEY_LOCK_CLOCK));
         }
 
         mNavigationBarHeight = (SeekBarPreference) findPreference(KEY_NAVIGATION_BAR_HEIGHT);
