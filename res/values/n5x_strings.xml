@@ -269,4 +269,12 @@
     <!--- Notification ticker -->
     <string name="enable_ticker_title">Notification ticker</string>
     <string name="enable_ticker_summary">Show notification ticker on status bar when a notification arrive</string>
+
+    <!--- Heads up -->
+    <string name="enable_headsup_title">Heads up</string>
+    <string name="enable_headsup_summary">Show heads up notifications when a notification arrive</string>
+
+    <!--- Heads up for all -->
+    <string name="headsup_for_all_title">Heads up for all</string>
+    <string name="headsup_for_all_summary">Show heads up notifications for all notifications</string>
 </resources>
