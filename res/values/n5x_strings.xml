@@ -265,4 +265,8 @@
     <!--- Lock clock -->
     <string name="lock_clock_title">Clock and weather widget</string>
     <string name="lock_clock_summary">View or change how the \'cLock\' Home widget will display</string>
+
+    <!--- Notification ticker -->
+    <string name="enable_ticker_title">Notification ticker</string>
+    <string name="enable_ticker_summary">Show notification ticker on status bar when a notification arrive</string>
 </resources>
