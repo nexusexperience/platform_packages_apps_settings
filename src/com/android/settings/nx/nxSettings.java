@@ -50,6 +50,7 @@ public class nxSettings extends SettingsPreferenceFragment
     /* Start of N5X Customizations */
     private static final String KEY_NAVIGATION_BAR_HEIGHT = "navigation_bar_height";
     private static final String PREF_QUICK_PULLDOWN = "quick_pulldown";
+    private static final String PREF_SMART_PULLDOWN = "smart_pulldown";
     private static final String PREF_BLOCK_ON_SECURE_KEYGUARD = "block_on_secure_keyguard";
     private static final String STATUSBAR_CATEGORY = "statusbar_category";
     private static final String KEY_LOCK_CLOCK = "lock_clock";
@@ -57,6 +58,7 @@ public class nxSettings extends SettingsPreferenceFragment
     /* Start of N5X Customizations */
     private SeekBarPreference mNavigationBarHeight;
     ListPreference mQuickPulldown;
+    ListPreference mSmartPulldown;
     SwitchPreference mBlockOnSecureKeyguard;
 
     @Override
@@ -71,8 +73,10 @@ public class nxSettings extends SettingsPreferenceFragment
                 prefs.findPreference(STATUSBAR_CATEGORY);
 
         mQuickPulldown = (ListPreference) findPreference(PREF_QUICK_PULLDOWN);
+        mSmartPulldown = (ListPreference) findPreference(PREF_SMART_PULLDOWN);
         if (!DeviceUtils.isPhone(getActivity())) {
             statusbarCategory.removePreference(mQuickPulldown);
+            statusbarCategory.removePreference(mSmartPulldown);
         } else {
             // Quick Pulldown
             mQuickPulldown.setOnPreferenceChangeListener(this);
@@ -80,6 +84,13 @@ public class nxSettings extends SettingsPreferenceFragment
                     Settings.System.STATUS_BAR_QUICK_QS_PULLDOWN, 1);
             mQuickPulldown.setValue(String.valueOf(statusQuickPulldown));
             updateQuickPulldownSummary(statusQuickPulldown);
+
+            // Smart Pulldown
+            mSmartPulldown.setOnPreferenceChangeListener(this);
+            int smartPulldown = Settings.System.getInt(getContentResolver(),
+                    Settings.System.QS_SMART_PULLDOWN, 0);
+            mSmartPulldown.setValue(String.valueOf(smartPulldown));
+            updateSmartPulldownSummary(smartPulldown);
         }
 
         final LockPatternUtils lockPatternUtils = new LockPatternUtils(getActivity());
@@ -118,6 +129,12 @@ public class nxSettings extends SettingsPreferenceFragment
                     statusQuickPulldown);
             updateQuickPulldownSummary(statusQuickPulldown);
             return true;
+        } else if (preference == mSmartPulldown) {
+            int smartPulldown = Integer.valueOf((String) newValue);
+            Settings.System.putInt(getContentResolver(), Settings.System.QS_SMART_PULLDOWN,
+                    smartPulldown);
+            updateSmartPulldownSummary(smartPulldown);
+            return true;
         } else if (preference == mBlockOnSecureKeyguard) {
             Settings.Secure.putInt(getContentResolver(),
                     Settings.Secure.STATUS_BAR_LOCKED_ON_SECURE_KEYGUARD,
@@ -130,6 +147,31 @@ public class nxSettings extends SettingsPreferenceFragment
             return true;
         }
         return false;
+    }
+
+    private void updateSmartPulldownSummary(int value) {
+        Resources res = getResources();
+
+        if (value == 0) {
+            // Smart pulldown deactivated
+            mSmartPulldown.setSummary(res.getString(R.string.smart_pulldown_off));
+        } else {
+            String type = null;
+            switch (value) {
+                case 1:
+                    type = res.getString(R.string.smart_pulldown_dismissable);
+                    break;
+                case 2:
+                    type = res.getString(R.string.smart_pulldown_persistent);
+                    break;
+                default:
+                    type = res.getString(R.string.smart_pulldown_all);
+                    break;
+            }
+            // Remove title capitalized formatting
+            type = type.toLowerCase();
+            mSmartPulldown.setSummary(res.getString(R.string.smart_pulldown_summary, type));
+        }
     }
 
     private void updateQuickPulldownSummary(int value) {
