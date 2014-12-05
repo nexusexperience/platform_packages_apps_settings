@@ -17,6 +17,11 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+        <PreferenceScreen
+            android:fragment="com.android.settings.nx.RecentSettings"
+            android:key="recent_settings"
+            android:title="@string/recent_settings_title" />
+
     <PreferenceCategory
             android:key="statusbar_category"
             android:title="@string/additional_settings_qs_statusbar_title">

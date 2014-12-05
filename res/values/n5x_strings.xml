@@ -245,7 +245,7 @@
     <string name="search_widget_enabled_summary">Show search widget in recents app screen</string>
 
     <!-- Display advanced settings -->
-    <string name="nx_title">Advanced options</string>
+    <string name="nx_title">Interface</string>
 
     <!-- QuickSettings: Quick Pulldown -->
     <string name="title_quick_pulldown">Quick pulldown</string>
