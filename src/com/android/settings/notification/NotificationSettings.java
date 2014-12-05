@@ -18,12 +18,16 @@ package com.android.settings.notification;
 
 import android.content.ContentResolver;
 import android.content.Context;
+import android.content.Intent;
+import android.content.IntentFilter;
 import android.content.pm.PackageManager;
+import android.content.pm.ResolveInfo;
 import android.database.ContentObserver;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteException;
 import android.media.AudioManager;
 import android.media.RingtoneManager;
+import android.media.audiofx.AudioEffect;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -34,6 +38,7 @@ import android.os.Vibrator;
 import android.preference.Preference;
 import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.PreferenceCategory;
+import android.preference.PreferenceScreen;
 import android.preference.SeekBarVolumizer;
 import android.preference.TwoStatePreference;
 import android.provider.MediaStore;
@@ -70,6 +75,7 @@ public class NotificationSettings extends SettingsPreferenceFragment implements 
     private static final String KEY_LOCK_SCREEN_NOTIFICATIONS = "lock_screen_notifications";
     private static final String KEY_NOTIFICATION_ACCESS = "manage_notification_access";
     private static final String KEY_INCREASING_RING_VOLUME = "increasing_ring_volume";
+    private static final String KEY_MUSICFX = "musicfx";
 
     private static final int SAMPLE_CUTOFF = 2000;  // manually cap sample playback at 2 seconds
 
@@ -101,6 +107,7 @@ public class NotificationSettings extends SettingsPreferenceFragment implements 
     private Preference mNotificationAccess;
     private boolean mSecure;
     private int mLockscreenSelectedValue;
+    private Preference mMusicFx;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -140,6 +147,17 @@ public class NotificationSettings extends SettingsPreferenceFragment implements 
 
         mNotificationAccess = findPreference(KEY_NOTIFICATION_ACCESS);
         refreshNotificationListeners();
+
+        mMusicFx = sound.findPreference(KEY_MUSICFX);
+        Intent i = new Intent(AudioEffect.ACTION_DISPLAY_AUDIO_EFFECT_CONTROL_PANEL);
+        mMusicFx.setIntent(i);
+        PackageManager p = getPackageManager();
+        List<ResolveInfo> ris = p.queryIntentActivities(i, 0);
+        if (ris.size() == 0) {
+            sound.removePreference(mMusicFx);
+        } else if (ris.size() == 1) {
+            mMusicFx.setSummary(ris.get(0).loadLabel(p));
+        }
     }
 
     @Override
@@ -549,4 +567,14 @@ public class NotificationSettings extends SettingsPreferenceFragment implements 
             return rt;
         }
     };
+
+    @Override
+    public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
+        if (preference == mMusicFx) {
+            // let the framework fire off the intent
+            return false;
+        }
+
+        return super.onPreferenceTreeClick(preferenceScreen, preference);
+    }
 }
