@@ -70,8 +70,8 @@
     <string name="show_network_traffic_2000">2000 ms</string>
 
     <!-- Battery percentage -->
-    <string name="status_bar_native_battery_percentage_title">Battery percentage</string>
-    <string name="status_bar_native_battery_percentage_summary">Show hidden percentage</string>
+    <string name="status_bar_show_battery_percent_title">Battery percentage</string>
+    <string name="status_bar_show_battery_percent_summary">Show battery status percent</string>
 
     <!-- About phone screen, NX version -->
     <string name="mod_version">Nexus Experience version</string>
