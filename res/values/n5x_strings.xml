@@ -285,4 +285,7 @@
     <string name="smart_pulldown_dismissable">No dismissable</string>
     <string name="smart_pulldown_persistent">No persistent</string>
     <string name="smart_pulldown_all">No dismissable or persistent</string>
+
+    <!--- Tap To Wake -->
+    <string name="double_tap_to_wake_title">Double-tap to wake</string>
 </resources>
