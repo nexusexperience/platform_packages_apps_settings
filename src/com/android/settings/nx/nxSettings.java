@@ -16,6 +16,7 @@
 
 package com.android.settings.nx;
 
+import android.content.ContentResolver;
 import android.content.pm.PackageManager;
 import android.content.res.Resources;
 import android.media.Ringtone;
@@ -54,18 +55,22 @@ public class nxSettings extends SettingsPreferenceFragment
     private static final String PREF_BLOCK_ON_SECURE_KEYGUARD = "block_on_secure_keyguard";
     private static final String STATUSBAR_CATEGORY = "statusbar_category";
     private static final String KEY_LOCK_CLOCK = "lock_clock";
+    private static final String STATUS_BAR_SHOW_BATTERY_PERCENT = "status_bar_show_battery_percent";
 
     /* Start of N5X Customizations */
     private SeekBarPreference mNavigationBarHeight;
     ListPreference mQuickPulldown;
     ListPreference mSmartPulldown;
     SwitchPreference mBlockOnSecureKeyguard;
+    private ListPreference mStatusBarBattery;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         // Load the preferences from an XML resource
         addPreferencesFromResource(R.xml.nx_settings);
+
+        ContentResolver resolver = getActivity().getContentResolver();
 
         PreferenceScreen prefs = getPreferenceScreen();
 
@@ -108,6 +113,14 @@ public class nxSettings extends SettingsPreferenceFragment
             statusbarCategory.removePreference(prefs.findPreference(KEY_LOCK_CLOCK));
         }
 
+        mStatusBarBattery = (ListPreference) findPreference(STATUS_BAR_SHOW_BATTERY_PERCENT);
+
+        int batteryStyle = Settings.System.getInt(
+                resolver, Settings.System.STATUS_BAR_SHOW_BATTERY_PERCENT, 0);
+        mStatusBarBattery.setValue(String.valueOf(batteryStyle));
+        mStatusBarBattery.setSummary(mStatusBarBattery.getEntry());
+        mStatusBarBattery.setOnPreferenceChangeListener(this);
+
         mNavigationBarHeight = (SeekBarPreference) findPreference(KEY_NAVIGATION_BAR_HEIGHT);
         mNavigationBarHeight.setProgress((int)(Settings.System.getFloat(getContentResolver(),
                     Settings.System.NAVIGATION_BAR_HEIGHT, 1f) * 100));
@@ -122,6 +135,7 @@ public class nxSettings extends SettingsPreferenceFragment
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
+        ContentResolver resolver = getActivity().getContentResolver();
         if (preference == mQuickPulldown) {
             int statusQuickPulldown = Integer.valueOf((String) newValue);
             Settings.System.putInt(getContentResolver(),
@@ -139,6 +153,13 @@ public class nxSettings extends SettingsPreferenceFragment
             Settings.Secure.putInt(getContentResolver(),
                     Settings.Secure.STATUS_BAR_LOCKED_ON_SECURE_KEYGUARD,
                     (Boolean) newValue ? 1 : 0);
+            return true;
+        } else if (preference == mStatusBarBattery) {
+            int batteryStyle = Integer.valueOf((String) newValue);
+            int index = mStatusBarBattery.findIndexOfValue((String) newValue);
+            Settings.System.putInt(
+                    resolver, Settings.System.STATUS_BAR_SHOW_BATTERY_PERCENT, batteryStyle);
+            mStatusBarBattery.setSummary(mStatusBarBattery.getEntries()[index]);
             return true;
         } else if (preference == mNavigationBarHeight) {
             Settings.System.putFloat(getActivity().getContentResolver(),

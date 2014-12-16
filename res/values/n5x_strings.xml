@@ -69,10 +69,6 @@
     <string name="show_network_traffic_1500">1500 ms</string>
     <string name="show_network_traffic_2000">2000 ms</string>
 
-    <!-- Battery percentage -->
-    <string name="status_bar_show_battery_percent_title">Battery percentage</string>
-    <string name="status_bar_show_battery_percent_summary">Show battery status percent</string>
-
     <!-- About phone screen, NX version -->
     <string name="mod_version">Nexus Experience version</string>
     <string name="mod_version_default">Unknown</string>
@@ -175,6 +171,13 @@
     <!-- Status bar brightness -->
     <string name="status_bar_toggle_brightness">Brightness control</string>
     <string name="status_bar_toggle_brightness_summary">Adjust brightness by sliding across the status bar</string>
+
+    <!-- Battery percentage -->
+    <string name="status_bar_battery_percentage_title">Show battery percentage</string>
+    <string name="status_bar_battery_percentage_dialog_title">Battery percentage</string>
+    <string name="status_bar_battery_percentage_default">Hidden (default)</string>
+    <string name="status_bar_battery_percentage_text_inside">Inside the icon</string>
+    <string name="status_bar_battery_percentage_text_next">Next to the icon</string>
 
     <!-- Notification light dialogs -->
     <string name="edit_light_settings">Edit light settings</string>
