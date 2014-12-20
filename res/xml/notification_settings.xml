@@ -88,11 +88,6 @@
                 android:persistent="false"
                 android:ringtoneType="notification" />
 
-        <!-- DSP Manager -->
-        <Preference
-                android:key="musicfx"
-                android:title="@string/musicfx_title" />
-
         <!-- Other sounds -->
         <Preference
                 android:key="other_sounds"
