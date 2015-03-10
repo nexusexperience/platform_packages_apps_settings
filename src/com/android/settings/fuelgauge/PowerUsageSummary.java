@@ -291,6 +291,7 @@ public class PowerUsageSummary extends PreferenceFragment {
                     if ("user".equals(Build.TYPE)) {
                         continue;
                     }
+
                     if ("userdebug".equals(Build.TYPE)) {
                         continue;
                     }
