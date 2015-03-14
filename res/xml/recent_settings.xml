@@ -31,11 +31,6 @@
             android:summary="@string/left_clear_all_recents_summary"
             android:dependency="clear_all_recents_enabled" />
 
-        <SwitchPreference
-            android:key="clear_all_recents_navbar_enabled"
-            android:title="@string/clear_all_recents_navbar_enabled_title"
-            android:summary="@string/clear_all_recents_navbar_enabled_summary" />
-
         <com.android.settings.applications.SystemSettingSwitchPreference
             android:defaultValue="true"
             android:key="search_widget_enabled"

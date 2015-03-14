@@ -47,6 +47,7 @@ import android.os.SystemProperties;
 import android.os.UserHandle;
 import android.os.UserManager;
 import android.preference.ListPreference;
+import android.preference.CheckBoxPreference;
 import android.preference.Preference;
 import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.PreferenceGroup;
@@ -236,13 +237,12 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
 
     private ListPreference mAppProcessLimit;
 
-    private CheckBoxPreference mShowAllANRs;
-    private CheckBoxPreference mKillAppLongpressBack;
+    private SwitchPreference mKillAppLongpressBack;
     private SwitchPreference mShowAllANRs;
 
     private PreferenceScreen mProcessStats;
 
-    private CheckBoxPreference mAdvancedReboot;
+    private SwitchPreference mAdvancedReboot;
     private ListPreference mRootAccess;
     private Object mSelectedRootValue;
 
@@ -312,7 +312,7 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
         mDebugViewAttributes = findAndInitSwitchPref(DEBUG_VIEW_ATTRIBUTES);
         mPassword = (PreferenceScreen) findPreference(LOCAL_BACKUP_PASSWORD);
         mAllPrefs.add(mPassword);
-        mAdvancedReboot = findAndInitCheckboxPref(ADVANCED_REBOOT_KEY);
+        mAdvancedReboot = findAndInitSwitchPref(ADVANCED_REBOOT_KEY);
 
 
         if (!android.os.Process.myUserHandle().equals(UserHandle.OWNER)) {
@@ -376,7 +376,7 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
         mAllPrefs.add(mShowAllANRs);
         mResetSwitchPrefs.add(mShowAllANRs);
 
-        mKillAppLongpressBack = findAndInitCheckboxPref(KILL_APP_LONGPRESS_BACK);
+        mKillAppLongpressBack = findAndInitSwitchPref(KILL_APP_LONGPRESS_BACK);
 
         Preference hdcpChecking = findPreference(HDCP_CHECKING_KEY);
         if (hdcpChecking != null) {

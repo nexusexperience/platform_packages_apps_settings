@@ -31,10 +31,8 @@ public class RecentSettings extends SettingsPreferenceFragment implements Prefer
     private static final String TAG = "RecentSettings";
 
     private static final String KEY_CLEAR_ALL_RECENTS_ENABLED = "clear_all_recents_enabled";
-    private static final String KEY_CLEAR_ALL_RECENTS_NAVBAR_ENABLED = "clear_all_recents_navbar_enabled";
 
     private SwitchPreference mClearAllRecents;
-    private SwitchPreference mClearAllRecentsNavbar;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -47,11 +45,6 @@ public class RecentSettings extends SettingsPreferenceFragment implements Prefer
         mClearAllRecents = (SwitchPreference) findPreference(KEY_CLEAR_ALL_RECENTS_ENABLED);
         mClearAllRecents.setPersistent(false);
 
-        mClearAllRecentsNavbar = (SwitchPreference) prefs.findPreference(KEY_CLEAR_ALL_RECENTS_NAVBAR_ENABLED);
-        mClearAllRecentsNavbar.setChecked(Settings.System.getInt(resolver,
-                    Settings.System.CLEAR_ALL_RECENTS_NAVBAR_ENABLED, 1) == 1);
-
-        updateRecents();
     }
 
     @Override
@@ -71,22 +64,12 @@ public class RecentSettings extends SettingsPreferenceFragment implements Prefer
                Settings.System.CLEAR_ALL_RECENTS_ENABLED, false);
     }
 
-    private boolean recentsNavbar() {
-        return Settings.System.getBoolean(getActivity().getContentResolver(),
-               Settings.System.CLEAR_ALL_RECENTS_NAVBAR_ENABLED, false);
-    }
-
     @Override
     public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
         ContentResolver resolver = getActivity().getContentResolver();
         if (preference == mClearAllRecents) {
             Settings.System.putInt(resolver, Settings.System.CLEAR_ALL_RECENTS_ENABLED,
                     mClearAllRecents.isChecked() ? 1 : 0);
-            updateRecents();
-        } else if (preference == mClearAllRecentsNavbar) {
-            Settings.System.putInt(resolver, Settings.System.CLEAR_ALL_RECENTS_NAVBAR_ENABLED,
-                    mClearAllRecentsNavbar.isChecked() ? 1 : 0);
-            updateRecents();
         } else {
             return super.onPreferenceTreeClick(preferenceScreen, preference);
         }
@@ -98,21 +81,4 @@ public class RecentSettings extends SettingsPreferenceFragment implements Prefer
         return true;
     }
 
-    private void updateRecents() {
-        if (recentsFAB()) {
-            mClearAllRecentsNavbar.setEnabled(false);
-            mClearAllRecentsNavbar.setChecked(false);
-            Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(),
-                Settings.System.CLEAR_ALL_RECENTS_NAVBAR_ENABLED, 0);
-        } else {
-            mClearAllRecentsNavbar.setEnabled(true);
-            if (recentsNavbar()) {
-                mClearAllRecents.setEnabled(false);
-                Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(),
-                    Settings.System.CLEAR_ALL_RECENTS_ENABLED, 0);
-            } else {
-                mClearAllRecents.setEnabled(true);
-            }
-        }
-    }
 }
